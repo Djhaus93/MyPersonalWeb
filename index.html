@@ -1,12 +1,119 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <title>Welcome to Devin Hauser's Portfolio</title>
-        <meta name="description">This is Devin Hauser's personal online portfolio.</meta>
+        <title>Devin Hauser's Web Development Portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale1.0">
+        <meta name="description" content="Devin Hauser's web development portfolio. Making a difference in your online presence.">
+        <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+        
     </head>
     <body>
-            <header><h1>Devin Hauser's Portfolio</h1></header>
-                <main>
-                    <p>Coming Soon...</p>
-                </main>
+        <header class="row w-100">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <a class="navbar-brand" href="#"><img alt="Devin Hauser Logo" src="assets/images/logo.png" width="100" height="100"/></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#">Home</a>
+                    <a class="nav-item nav-link" href="#">Portfolio</a>
+                    <a class="nav-item nav-link" href="#">About</a>
+                    <a class="nav-item nav-link" href="#">Contact</a>
+                  </div>
+                </div>
+              </nav>
+        </header>
+
+        <main>
+            <div class="container vh-100">
+
+                <div class="row h-100 align-items-center">
+                    <div class="col">
+                        <h1 class="display-2">Devin Hauser</h1>
+                        <p class="display-6">Front-end Web Developer</p>
+                        <a href="#"><button type="button" class="btn btn-primary">My Work</button></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container vh-100">
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="display-4">My Work</h2>
+                        </div>
+                    </div>
+
+                <div class="row align-items-center">
+                    <div class="col">
+                        <button id="project1trigger" data-toggle="modal" data-target="#exampleModal"><img class="img-fluid img-thumbnail" src="assets/images/Project 1.png"/></button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" id="close1" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="img-fluid img-thumbnail" src="assets/images/Project 1.png" />
+                                    <h3>CC Patio</h3>
+                                    <p>This is a custom built WordPress site that uses the OxygenBuilder framework.</p>
+                                    <a href="https://www.ccpatio.com/">CC Patio</a>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img class="img-fluid img-thumbnail" src="assets/images/Project 1.png" />
+                    </div>
+                    <div class="col">
+                        <img class="img-fluid img-thumbnail" src="assets/images/Project 1.png" />
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col">
+                        <img class="img-fluid img-thumbnail" src="assets/images/Project 1.png" />
+                    </div>
+                    <div class="col">
+                        <img class="img-fluid img-thumbnail" src="assets/images/Project 1.png" />
+                    </div>
+                    <div class="col">
+                        <img class="img-fluid img-thumbnail" src="assets/images/Project 1.png" />
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col">
+                        <img class="img-fluid img-thumbnail" src="assets/images/Project 1.png" />
+                    </div>
+                    <div class="col">
+                        <img class="img-fluid img-thumbnail" src="assets/images/Project 1.png" />
+                    </div>
+                    <div class="col">
+                        <img class="img-fluid img-thumbnail" src="assets/images/Project 1.png" />
+                    </div>
+                </div>
+        
+
+            </div>
+        </main>
+        
+        <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            $('#project1trigger').on('click', function (event) {
+            $('#exampleModal').modal('show');
+            })
+            $('#close1').on('click', function (event) {
+            $('#exampleModal').modal('hide');
+            })
+          </script>
     </body>
+    
 </html>
